@@ -24,6 +24,8 @@ public class QueueMain {
 
         System.out.println(queue.isEmpty());
 
+        System.out.println(queue.size());
+
     }
 
 }
