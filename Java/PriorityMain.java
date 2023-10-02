@@ -2,7 +2,8 @@ import java.util.*;
 
 public class PriorityMain {
     public static void main(String args[]) {
-        Queue<Double> queue = new LinkedList<>();
+        // The Queue has been arranged in reverse order using collections.
+        Queue<Double> queue = new PriorityQueue<>(Collections.reverseOrder(null));
 
         queue.offer(3.0);
         queue.offer(4.0);
@@ -12,5 +13,7 @@ public class PriorityMain {
         while(!queue.isEmpty()) {
             System.out.println(queue.poll());
         }
+        // The Queue will print in order.
+        // A priority Queue of strings prints in alphabetical order.
     }
 }
